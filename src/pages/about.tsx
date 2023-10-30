@@ -1,5 +1,5 @@
 import * as React from 'react';
-import HorizontalLogo from '../assets/images/horizonlogo.png';
+
 import HeroImage from '../assets/images/firshnfritu.webp';
 import AppleDownload from '../assets/images/Appstore.webp';
 import AndroidDownload from '../assets/images/Googleplay.webp';
@@ -9,6 +9,7 @@ import {
   GooglePlay,
   AppleStore,
   VendorPic,
+  HorizontalLogo,
 } from '../assets/images';
 
 const About = () => {

@@ -26,6 +26,8 @@ export default {
           'url(https://res.cloudinary.com/snowrealm/image/upload/v1698659290/aboutheader_tupwsw.webp)',
         currvyBg:
           'url(https://res.cloudinary.com/snowrealm/image/upload/v1698664767/buttom_ophzy1.webp)',
+        contactUsBg:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698666334/contactusbg_rj3qvy.webp)',
         footerBg:
           'url(https://res.cloudinary.com/snowrealm/image/upload/v1698646547/footer_overlay_igsquh.webp)',
       },
