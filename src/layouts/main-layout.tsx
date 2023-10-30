@@ -12,7 +12,7 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children }: MainLayoutProps) => (
   <div className='flex flex-col min-h-screen'>
-    <header className='container z-40 bg-background'>
+    {/* <header className='container z-40 bg-background'>
       <div className='h-20 flex items-center justify-between py-6'>
         <MainNav items={navigationConfig.mainNav} />
         <nav>
@@ -27,7 +27,7 @@ const MainLayout = ({ children }: MainLayoutProps) => (
           </Link>
         </nav>
       </div>
-    </header>
+    </header> */}
     <main className='flex-1'>
       {children}
       <Outlet />
