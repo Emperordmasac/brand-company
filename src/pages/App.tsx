@@ -1,3 +1,12 @@
-const App = () => <div className='text-center'>Helloo World</div>;
+import Router from '../lib/routes';
+import { BrowserRouter } from 'react-router-dom';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
+}
 
 export default App;
