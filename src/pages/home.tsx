@@ -8,7 +8,7 @@ import customer from '../assets/images/girl.webp';
 
 import * as React from 'react';
 
-import { HorizontalLogo } from '../assets/images';
+import { HorizontalLogo, girlwebp } from '../assets/images';
 
 const Home = () => {
   const [mobileNav, setMobileNav] = React.useState(false);
@@ -176,91 +176,97 @@ const Home = () => {
         </div>
       </section>
       <section className='bg-[#F3F7F5]'>
-        <div className='container mx-auto py-24 px-5'>
-          <div className='flex flex-col mb-20 w-full text-center'>
-            <p className='text-[1rem] lg:w-2/3 leading-[1.625] mx-auto'>
+        <div className='container px-5 py-24 mx-auto'>
+          <div className='flex flex-col text-center w-full mb-20'>
+            <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
               TESTIMONIALS
             </p>
-            <h2 className='text-3xl sm:text-4xl mb-2 text-[#0a0707] font-bold '>
+            <h1 className='sm:text-4xl text-3xl font-bold title-font leading-[60px] mb-2 text-[#0A0707]'>
               What Our Customer Say
-            </h2>
+            </h1>
           </div>
-          <div className='flex flex-col md:flex-row gap-8 items-center w-full justify-center'>
-            <div className='w-[80%]'>
-              {/* <div className='absolute z-[2] mx-24 left-10'>
-                <svg
-                  width='171'
-                  height='139'
-                  className='md:block hidden'
-                  viewBox='0 0 171 139'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    d='M0.118438 138.707L3.61581 138.572C11.6908 102.732 40.0185 45.0898 54.0079 44.5469C64.0004 44.1592 59.5903 72.3514 73.5797 71.8085C82.5536 70.9599 99.7407 36.7678 105.736 36.5351C109.234 36.3994 110.005 43.3747 115.5 43.1615C133.487 42.4635 177.863 -0.289347 169.369 0.0402481C162.974 0.288413 128.486 29.6478 114.996 30.1713C109.001 30.4039 110.1 27.359 106.886 27.4837C99.8913 27.7551 83.1845 61.4283 73.192 61.8161C64.1987 62.165 65.7275 37.0869 55.2353 37.494C42.7447 37.9787 9.44292 95.3132 0.118438 138.707Z'
-                    fill='#0E6134'
-                  ></path>
-                </svg>
-              </div> */}
-              <div className='lg:ml-44'>
-                <img src={customer} alt='customer image' />
+          <div className='lg:w-2/3 w-full mx-auto '>
+            <div className='grid md:grid-rows-1 md:grid-flow-col gap-4 h-full'>
+              <div className='row-span-3'>
+                <div className='relative z-[1] md:before:content-link '>
+                  <div className='z-[2] absolute bottom-[80%] left-0'>
+                    <svg
+                      width='171'
+                      height='139'
+                      className='md:block hidden'
+                      viewBox='0 0 171 139'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M0.118438 138.707L3.61581 138.572C11.6908 102.732 40.0185 45.0898 54.0079 44.5469C64.0004 44.1592 59.5903 72.3514 73.5797 71.8085C82.5536 70.9599 99.7407 36.7678 105.736 36.5351C109.234 36.3994 110.005 43.3747 115.5 43.1615C133.487 42.4635 177.863 -0.289347 169.369 0.0402481C162.974 0.288413 128.486 29.6478 114.996 30.1713C109.001 30.4039 110.1 27.359 106.886 27.4837C99.8913 27.7551 83.1845 61.4283 73.192 61.8161C64.1987 62.165 65.7275 37.0869 55.2353 37.494C42.7447 37.9787 9.44292 95.3132 0.118438 138.707Z'
+                        fill='#0E6134'
+                      ></path>
+                    </svg>
+                  </div>
+                  <img
+                    className='md:z-[2] md:absolute md:bottom-[10%] md:left-[10%]'
+                    src={girlwebp}
+                    alt='customer picture'
+                  />
+                </div>
               </div>
-            </div>
-            <div className='w-20% text-center'>
-              <p className='font-bold text-[22px] leading-[22px]'>
-                Justina Alins
-              </p>
-              <p className='font-normal text-[14px] leading-[14px] text-[#8F9698]'>
-                Vendor
-              </p>
-              <p className='mt-5 mb-2 font-normal text-[18px] leading-[32px] italic text-[#8F9698] w-full'>
-                “Really fresh2cart is the best platform to boost your business
-                especially their support was awesome, They have tried to level
-                best to give best support of new candidate.”
-              </p>
-              <div className='flex items-center justify-center'>
-                <svg
-                  className='w-5 h-5 text-yellow-400'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
-                </svg>
-                <svg
-                  className='w-5 h-5 text-yellow-400'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
-                </svg>
-                <svg
-                  className='w-5 h-5 text-yellow-400'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
-                </svg>
-                <svg
-                  className='w-5 h-5 text-yellow-400'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
-                </svg>
-                <svg
-                  className='w-5 h-5 text-gray-300 dark:text-gray-500'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
-                </svg>
+              <div className='col-span-2 px-16 mt-10'>
+                <p className='font-bold text-[22px] leading-[22px]'>
+                  Justina Alins
+                </p>
+                <p className='font-normal text-[14px] leading-[14px] text-[#8F9698]'>
+                  Vendor
+                </p>
+                <p className='mt-5 font-normal text-[18px] leading-[32px] italic   text-[#8F9698]'>
+                  “Really fresh2cart is the best platform to boost your business
+                  especially their support was awesome, They have tried to level
+                  best to give best support of new candidate.”
+                </p>
+                <div className='flex items-center'>
+                  <svg
+                    className='w-5 h-5 text-yellow-400'
+                    fill='currentColor'
+                    viewBox='0 0 20 20'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
+                  </svg>
+                  <svg
+                    className='w-5 h-5 text-yellow-400'
+                    fill='currentColor'
+                    viewBox='0 0 20 20'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
+                  </svg>
+                  <svg
+                    className='w-5 h-5 text-yellow-400'
+                    fill='currentColor'
+                    viewBox='0 0 20 20'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
+                  </svg>
+                  <svg
+                    className='w-5 h-5 text-yellow-400'
+                    fill='currentColor'
+                    viewBox='0 0 20 20'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
+                  </svg>
+                  <svg
+                    className='w-5 h-5 text-gray-300 dark:text-gray-500'
+                    fill='currentColor'
+                    viewBox='0 0 20 20'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z'></path>
+                  </svg>
+                </div>
               </div>
-              <div className='mt-8 flex items-center gap-4 justify-center'>
+              <div className='row-span-1 col-span-2 px-16 space-x-4 mt-10'>
                 <button>
                   <svg
                     width='16'
@@ -291,6 +297,7 @@ const Home = () => {
                 </button>
               </div>
             </div>
+            <div></div>
           </div>
         </div>
       </section>
