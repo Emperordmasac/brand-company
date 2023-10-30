@@ -22,8 +22,15 @@ export default {
           'url(https://res.cloudinary.com/snowrealm/image/upload/v1698242018/dasher_rrgafi.webp)',
         downloadBg:
           'url(https://res.cloudinary.com/snowrealm/image/upload/v1698416470/downloadback_xqkexu.webp)',
+        aboutHeader:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698659290/aboutheader_tupwsw.webp)',
+        currvyBg:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698664767/buttom_ophzy1.webp)',
         footerBg:
           'url(https://res.cloudinary.com/snowrealm/image/upload/v1698646547/footer_overlay_igsquh.webp)',
+      },
+      content: {
+        link: 'url(https://res.cloudinary.com/snowrealm/image/upload/v1698663942/imagbg_y1al88.svg)',
       },
       colors: {
         border: 'hsl(var(--border))',

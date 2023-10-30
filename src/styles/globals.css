@@ -4,14 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components {
-  .content-link {
-    --tw-content: url(.);
-    content: var(--tw-content);
-  }
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
