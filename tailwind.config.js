@@ -13,6 +13,18 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        welcomeBg:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698237287/welcomebg_qrmhp0.webp)',
+        partner1:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698241443/partner_1_goxy8f.webp)',
+        dasher:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698242018/dasher_rrgafi.webp)',
+        downloadBg:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698416470/downloadback_xqkexu.webp)',
+        footerBg:
+          'url(https://res.cloudinary.com/snowrealm/image/upload/v1698646547/footer_overlay_igsquh.webp)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
